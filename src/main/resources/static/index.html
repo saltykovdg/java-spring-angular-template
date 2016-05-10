@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>java-spring-angular-template</title>
+
+    <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+    <script src="lib/js/angular.min.js" type="text/javascript"></script>
+    <script src="lib/js/angular-ui-router.min.js" type="text/javascript"></script>
+
+    <script src="app/app.module.js" type="text/javascript"></script>
+    <script src="app/app.routes.js" type="text/javascript"></script>
+
+    <script src="app/layout/header.controller.js" type="text/javascript"></script>
+    <script src="app/layout/footer.controller.js" type="text/javascript"></script>
+
+    <link href="app/components/todoList.css" rel="stylesheet">
+    <script src="app/components/todoList.controller.js" type="text/javascript"></script>
+</head>
+<body class="container-fluid">
+<header ui-view="viewHeader"></header>
+<div ui-view="viewContent"></div>
+<footer ui-view="viewFooter"></footer>
+</body>
+</html>
