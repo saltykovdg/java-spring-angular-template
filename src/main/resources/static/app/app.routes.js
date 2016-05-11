@@ -1,6 +1,8 @@
 angular
-    .module('app', ['ui.router'])
+    .module('app')
     .config(configure);
+
+configure.$inject = ['$stateProvider', '$urlRouterProvider'];
 
 function configure($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');

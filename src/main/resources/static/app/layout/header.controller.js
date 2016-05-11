@@ -2,6 +2,8 @@ angular
     .module('app')
     .controller('HeaderController', HeaderController);
 
+HeaderController.$inject = ['$location'];
+
 function HeaderController($location) {
     var header = this;
     header.title = 'header page';
