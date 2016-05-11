@@ -24,7 +24,11 @@ function configure($stateProvider, $urlRouterProvider) {
             url: '/',
             views: {
                 "viewContent@": {
-                    template: '<div class="container-fluid"><h2>Home page</h2></div>'
+                    template: [
+                        '<div class="container-fluid">',
+                            '<h2>Home page</h2>',
+                        '</div>'
+                    ].join('')
                 }
             }
         })
