@@ -3,6 +3,6 @@ angular
     .controller('FooterController', FooterController);
 
 function FooterController() {
-    var footer = this;
-    footer.title = 'footer page';
+    var vm = this;
+    vm.title = 'footer text from controller';
 }

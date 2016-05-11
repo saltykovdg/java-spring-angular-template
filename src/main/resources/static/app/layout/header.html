@@ -1,13 +1,26 @@
-<h1 class="page-header">{{header.title}}</h1>
+<h1 class="page-header">
+    {{"header.title" | translate}}
+    <small>{{vm.title}}</small>
+</h1>
 
 <nav class="navbar navbar-default">
     <div class="navbar-header">
-        <a class="navbar-brand" ui-sref="index.home">Test app</a>
+        <a class="navbar-brand" ui-sref="index.home">{{"navbar.projectName" | translate}}</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-            <li ng-class="{active: header.isActive('/')}"><a ui-sref="index.home">Home</a></li>
-            <li ng-class="{active: header.isActive('/todo')}"><a ui-sref="index.todo">Todo List</a></li>
+            <li ng-class="{active: header.isActive('/')}"><a ui-sref="index.home">{{"navbar.home" | translate}}</a></li>
+            <li ng-class="{active: header.isActive('/todo')}"><a ui-sref="index.todo">{{"navbar.todoList" | translate}}</a></li>
         </ul>
+        <div class="navbar-form navbar-right" ng-if="vm.i18nVisible">
+            <label>{{"header.language-select" | translate}}:</label>
+            <div class="form-group">
+                <select class="form-control"
+                        ng-model="vm.currentLocaleDisplayName"
+                        ng-options="localesDisplayName for localesDisplayName in vm.localesDisplayNames"
+                        ng-change="vm.changeLanguage(vm.currentLocaleDisplayName)">
+                </select>
+            </div>
+        </div>
     </div>
 </nav>

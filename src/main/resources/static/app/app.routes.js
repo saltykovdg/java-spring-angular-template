@@ -12,11 +12,13 @@ function configure($stateProvider, $urlRouterProvider) {
             views: {
                 "viewHeader": {
                     templateUrl: 'app/layout/header.html',
-                    controller: 'HeaderController as header'
+                    controller: 'HeaderController',
+                    controllerAs: 'vm'
                 },
                 "viewFooter": {
                     templateUrl: 'app/layout/footer.html',
-                    controller: 'FooterController as footer'
+                    controller: 'FooterController',
+                    controllerAs: 'vm'
                 }
             }
         })
@@ -26,7 +28,7 @@ function configure($stateProvider, $urlRouterProvider) {
                 "viewContent@": {
                     template: [
                         '<div class="container-fluid">',
-                            '<h2>Home page</h2>',
+                            '<h2>{{"home.title" | translate}}</h2>',
                         '</div>'
                     ].join('')
                 }

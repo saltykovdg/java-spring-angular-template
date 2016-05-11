@@ -1,4 +1,7 @@
 angular
     .module('app', [
-        'ui.router'
+        'ngCookies',
+        'ngResource',
+        'ui.router',
+        'pascalprecht.translate'
     ]);

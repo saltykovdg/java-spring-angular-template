@@ -1,8 +1,8 @@
-<h2>Todo</h2>
+<h2>{{"todoList.title" | translate}}</h2>
 
 <div>
-    <span>{{todoList.remaining()}} of {{todoList.todos.length}} remaining</span>
-    [ <a href="" ng-click="todoList.archive()">archive</a> ]
+    <span>{{todoList.remaining()}} {{"todoList.remaining1" | translate}} {{todoList.todos.length}} {{"todoList.remaining2" | translate}}</span>
+    [ <a href="" ng-click="todoList.archive()">{{"todoList.archive" | translate}}</a> ]
     <ul class="unstyled">
         <li ng-repeat="todo in todoList.todos">
             <label class="checkbox">
@@ -13,7 +13,7 @@
     </ul>
     <form class="form-inline" ng-submit="todoList.addTodo()">
         <input class="form-control" type="text" ng-model="todoList.todoText" size="30"
-               placeholder="add new todo here">
-        <input class="btn btn-primary" type="submit" value="add">
+               placeholder='{{"todoList.inputPlaceholder" | translate}}'>
+        <input class="btn btn-primary" type="submit" value='{{"todoList.buttonAdd" | translate}}'>
     </form>
 </div>

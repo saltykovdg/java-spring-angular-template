@@ -1,0 +1,18 @@
+{
+  "app.title": "java-spring-angular-template",
+  "header.language-select": "Язык",
+  "header.title": "Хедер",
+  "home.title": "Главная страница",
+  "footer.title": "Футер",
+
+  "navbar.projectName": "Тестовое приложение",
+  "navbar.home": "Главная",
+  "navbar.todoList": "Заметки",
+
+  "todoList.title": "Заметки",
+  "todoList.remaining1": "из",
+  "todoList.remaining2": "осталось",
+  "todoList.archive": "архивировать",
+  "todoList.inputPlaceholder": "Введите здесь текст заметки",
+  "todoList.buttonAdd": "Добавить"
+}

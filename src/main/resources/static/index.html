@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html ng-app="app">
 <head>
-    <title>java-spring-angular-template</title>
+    <title>{{"app.title" | translate}}</title>
 
     <link href="lib/css/bootstrap.min.css" rel="stylesheet">
     <script src="lib/js/angular.min.js" type="text/javascript"></script>
+    <script src="lib/js/angular-sanitize.min.js" type="text/javascript"></script>
+    <script src="lib/js/angular-cookies.min.js" type="text/javascript"></script>
+    <script src="lib/js/angular-resource.min.js" type="text/javascript"></script>
     <script src="lib/js/angular-ui-router.min.js" type="text/javascript"></script>
+    <script src="lib/js/angular-translate.min.js" type="text/javascript"></script>
+    <script src="lib/js/angular-translate-loader-static-files.min.js" type="text/javascript"></script>
+    <script src="lib/js/angular-translate-storage-cookie.min.js" type="text/javascript"></script>
+    <script src="lib/js/angular-translate-storage-local.min.js" type="text/javascript"></script>
 
     <script src="app/app.module.js" type="text/javascript"></script>
     <script src="app/app.routes.js" type="text/javascript"></script>
+    <script src="app/app.i18n.js" type="text/javascript"></script>
+
+    <script src="app/services/i18n.service.js" type="text/javascript"></script>
 
     <script src="app/layout/header.controller.js" type="text/javascript"></script>
     <script src="app/layout/footer.controller.js" type="text/javascript"></script>

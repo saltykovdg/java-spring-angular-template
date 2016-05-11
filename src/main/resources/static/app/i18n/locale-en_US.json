@@ -1,0 +1,18 @@
+{
+  "app.title": "java-spring-angular-template",
+  "header.language-select": "Language",
+  "header.title": "Header page",
+  "home.title": "Home page",
+  "footer.title": "Footer page",
+
+  "navbar.projectName": "Test app",
+  "navbar.home": "Home",
+  "navbar.todoList": "Todo List",
+
+  "todoList.title": "Todo",
+  "todoList.remaining1": "of",
+  "todoList.remaining2": "remaining",
+  "todoList.archive": "archive",
+  "todoList.inputPlaceholder": "add new todo here",
+  "todoList.buttonAdd": "add"
+}

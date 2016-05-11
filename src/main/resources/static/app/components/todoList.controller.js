@@ -9,8 +9,10 @@ function TodoListController() {
         {text: 'build an angular app', done: false}];
 
     todoList.addTodo = function () {
-        todoList.todos.push({text: todoList.todoText, done: false});
-        todoList.todoText = '';
+        if (todoList.todoText) {
+            todoList.todos.push({text: todoList.todoText, done: false});
+            todoList.todoText = '';
+        }
     };
 
     todoList.remaining = function () {
